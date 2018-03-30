@@ -1,0 +1,4 @@
+mahnoor  Present
+Zain  Absent
+leader  Present
+hamza  Present

@@ -1,0 +1,17 @@
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\bin\Debug\studentprofilegui.exe.config
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\bin\Debug\studentprofilegui.exe
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\bin\Debug\studentprofilegui.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.Properties.Resources.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.csproj.GenerateResource.Cache
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.exe
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.pdb
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.firstwindow.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.searchingbyid.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.searchingdata.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.Search_by_Semester.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.delete_record.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.add_record.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.searchingName.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.Mark_atendence.resources
+C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\studentprofilegui\studentprofilegui\obj\Debug\studentprofilegui.view_attendence.resources
