@@ -4,3 +4,6 @@ C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\assignment1\assignment1\b
 C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\assignment1\assignment1\obj\Debug\assignment1.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\assignment1\assignment1\obj\Debug\assignment1.exe
 C:\Users\ASUS\Documents\Visual Studio 2015\Projects\vp\assignment1\assignment1\obj\Debug\assignment1.pdb
+D:\study\6thsemester\vp\VPassignment1\mahnoorakhtar_01-131152-015\Vpassignment#1\assignment1\assignment1\bin\Debug\assignment1.exe.config
+D:\study\6thsemester\vp\VPassignment1\mahnoorakhtar_01-131152-015\Vpassignment#1\assignment1\assignment1\obj\Debug\assignment1.exe
+D:\study\6thsemester\vp\VPassignment1\mahnoorakhtar_01-131152-015\Vpassignment#1\assignment1\assignment1\obj\Debug\assignment1.pdb
