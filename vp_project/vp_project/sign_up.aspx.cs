@@ -26,7 +26,8 @@ namespace vp_project
         {
             con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True");
             con.Open();
-            string query = " Select  * from signUp where email='" + emailTextBox.Text.ToString() + "'";
+
+            string query = " Select  * from Vendor where email='" + emailTextBox.Text.ToString() + "'";
             cmnd = new SqlCommand(query, con);
             {
                cmnd.Connection = con;
@@ -42,15 +43,23 @@ namespace vp_project
                     {
 
                         {
-                            cmnd = new SqlCommand("insert into [signUp]" + "(First_name,Last_name,email,password,confirm_password) values(@First_name,@Last_name,@email,@password,@confirm_password) ", con);
+                            cmnd = new SqlCommand("insert into Vendor" + "(First_name,Last_name,email,password,confirm_password,Category) values(@First_name,@Last_name,@email,@password,@confirm_password,Category) ", con);
                             cmnd.Parameters.AddWithValue("@First_name", first_nameTextBox.Text);
                             cmnd.Parameters.AddWithValue("@Last_name", last_nameTextBox.Text);
                             cmnd.Parameters.AddWithValue("@email", emailTextBox.Text);
                             cmnd.Parameters.AddWithValue("@password", passwordTextBox.Text);
                             cmnd.Parameters.AddWithValue("@confirm_password", confirm_passwordTextBox.Text);
-
-                            cmnd.ExecuteNonQuery();
-                            Response.Write("registration successful");
+                            cmnd.Parameters.AddWithValue("@Category", category.SelectedItem.Value);
+                           int i= cmnd.ExecuteNonQuery();
+                            if(i!=0)
+                            {
+                                Response.Write("registration successful");
+                            }
+                            else
+                            {
+                                Response.Write("sorry");
+                            }
+                           
                             con.Close();
                         }
 
@@ -60,6 +69,8 @@ namespace vp_project
                     catch (Exception ex)
                     {
                         throw ex;
+                    
+                     
                     }
 
 
@@ -70,25 +81,12 @@ namespace vp_project
             }
 
            con.Close();
-
-
-
-
-           
-
-
-
             first_nameTextBox.Text = "";
             last_nameTextBox.Text = "";
             emailTextBox.Text = "";
             passwordTextBox.Text="";
             confirm_passwordTextBox.Text = "";
 
-
-        }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
     }
