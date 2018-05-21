@@ -24,7 +24,7 @@ namespace vp_project
 
         protected void submitButton_Click(object sender, EventArgs e)
         {
-            con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True");
+            con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True;MultipleActiveResultSets=true");
             con.Open();
 
             string query = " Select  * from Vendor where email='" + emailTextBox.Text.ToString() + "'";
@@ -43,13 +43,13 @@ namespace vp_project
                     {
 
                         {
-                            cmnd = new SqlCommand("insert into Vendor" + "(First_name,Last_name,email,password,confirm_password,Category) values(@First_name,@Last_name,@email,@password,@confirm_password,Category) ", con);
+                            cmnd = new SqlCommand("insert into Vendor" + "(First_name,Last_name,email,password,confirm_password,Category) values(@First_name,@Last_name,@email,@password,@confirm_password,@Category) ", con);
                             cmnd.Parameters.AddWithValue("@First_name", first_nameTextBox.Text);
                             cmnd.Parameters.AddWithValue("@Last_name", last_nameTextBox.Text);
                             cmnd.Parameters.AddWithValue("@email", emailTextBox.Text);
                             cmnd.Parameters.AddWithValue("@password", passwordTextBox.Text);
                             cmnd.Parameters.AddWithValue("@confirm_password", confirm_passwordTextBox.Text);
-                            cmnd.Parameters.AddWithValue("@Category", category.SelectedItem.Value);
+                            cmnd.Parameters.AddWithValue("@Category", Category.SelectedItem.Value);
                            int i= cmnd.ExecuteNonQuery();
                             if(i!=0)
                             {
@@ -87,6 +87,11 @@ namespace vp_project
             passwordTextBox.Text="";
             confirm_passwordTextBox.Text = "";
 
+
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

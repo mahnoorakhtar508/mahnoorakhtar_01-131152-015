@@ -103,9 +103,10 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="passwordTextBox" ErrorMessage="password is required" style="color: #FF3300"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style7">Select
-                    <asp:DropDownList ID="category" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
-                        <asp:ListItem Value="0">Vendor</asp:ListItem>
-                        <asp:ListItem Value="1">Buyer</asp:ListItem>
+                    <asp:DropDownList ID="Category" runat="server">
+                        <asp:ListItem>Vendor</asp:ListItem>
+                        <asp:ListItem>Buyer</asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>
