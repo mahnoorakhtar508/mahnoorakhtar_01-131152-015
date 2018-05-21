@@ -11,7 +11,7 @@
         }
         .auto-style1 {
             width: 100%;
-            height: 122px;
+            height: 226px;
         }
         .auto-style2 {
             width: 173px;
@@ -28,25 +28,43 @@
         .auto-style8 {
             width: 173px;
             text-align: right;
-            height: 37px;
+            height: 28px;
         }
         .auto-style9 {
-            height: 37px;
+            height: 28px;
         }
         .auto-style10 {
-            width: 314px;
+            width: 361px;
         }
         .auto-style11 {
             height: 45px;
-            width: 314px;
+            width: 361px;
         }
         .auto-style12 {
-            height: 37px;
-            width: 314px;
+            height: 28px;
+            width: 361px;
+        }
+        .auto-style13 {
+            width: 100%;
+            height: 54px;
+        }
+        .auto-style14 {
+            font-size: xx-large;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <table class="auto-style13">
+        <tr>
+            <td class="auto-style14"><strong>Registration</strong></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
     <form id="form1" runat="server">
     <div>
     
@@ -84,7 +102,13 @@
                     <asp:TextBox ID="passwordTextBox" runat="server" TextMode="Password" Width="156px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="passwordTextBox" ErrorMessage="password is required" style="color: #FF3300"></asp:RequiredFieldValidator>
                 </td>
-                <td class="auto-style7"></td>
+                <td class="auto-style7">Select
+                    <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                        <asp:ListItem>Vendor</asp:ListItem>
+                        <asp:ListItem>Buyer</asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style8">Confirm Password:</td>

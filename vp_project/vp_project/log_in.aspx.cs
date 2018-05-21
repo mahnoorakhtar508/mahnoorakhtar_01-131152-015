@@ -13,27 +13,45 @@ namespace vp_project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack)
-            {
-                SqlConnection con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True");
-                con.Open();
-                string Checkuser = "Select count(*) from sign-up where email ='" + emailTextBox.Text + "'   ";
-                SqlCommand cmnd = new SqlCommand(Checkuser, con);
-                int temp = 0;
-                temp = Convert.ToInt32(cmnd.ExecuteScalar().ToString());
-                if (temp == 1)
-                {
-                    con.Open();
-                    string checkpass = "Select password from sign-up where email ='" + emailTextBox.Text + "' ";
-                }
-                con.Close();
-
-            }
+           
         }
 
         protected void loginbutton_Click(object sender, EventArgs e)
         {
+            if (IsPostBack)
+            {
+                SqlConnection con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True");
+                con.Open();
+                string Checkuser = "Select count(*) from signUp where email ='" + emailTextBox.Text + "'  and password='"+passwordTextBox.Text+"' ";
+                SqlCommand cmnd = new SqlCommand(Checkuser, con);
+                int temp = 0;
+                temp = Convert.ToInt32(cmnd.ExecuteScalar().ToString());
+                con.Close();
+                if (temp == 1)
+                {
+                    con.Open();
+                    string checkpass = "Select password from signUp where email ='" + emailTextBox.Text + "' ";
+                    SqlCommand cmd = new SqlCommand(checkpass, con);
+                    string password = cmd.ExecuteScalar().ToString();
+                    if (password == passwordTextBox.Text)
+                    {
+                        Session["New"] = emailTextBox.Text;
+                        Response.Write("login Successful");
 
+                    }
+                    else
+                    {
+                        Response.Write("please write correct password");
+                    }
+                }
+                else
+                {
+                    Response.Write("email  is not written correctly");
+                }
+                con.Close();
+                emailTextBox.Text = "";
+                passwordTextBox.Text = "";
+            }
         }
     }
 }

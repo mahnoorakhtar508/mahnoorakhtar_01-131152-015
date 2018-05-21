@@ -1,27 +1,6 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>renters.pk</title>
-      <link rel="shortcut icon" href="images/download.png" />
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/shop-homepage.css" rel="stylesheet">
-     
-  </head>
-
-  <body>
-     
-    <!-- Navigation -->
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="vp_project.home" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
           <a class="navbar-brand" href="#">Renters</a>
@@ -38,10 +17,10 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sign_Up</a>
+              <a class="nav-link" href="sign_up.aspx">Sign_Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">login</a>
+              <a class="nav-link" href="log_in.aspx">login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -68,6 +47,7 @@
         </div>
         <!-- /.col-lg-3 -->
 
+      
         <div class="col-lg-9">
 
           <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -219,6 +199,4 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  </body>
-
-</html>
+</asp:Content>
