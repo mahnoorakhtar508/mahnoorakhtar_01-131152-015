@@ -133,6 +133,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="sign_up.aspx" />
+    <Content Include="Submitadd.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -183,6 +184,13 @@
     </Compile>
     <Compile Include="sign_up.aspx.designer.cs">
       <DependentUpon>sign_up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Submitadd.aspx.cs">
+      <DependentUpon>Submitadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Submitadd.aspx.designer.cs">
+      <DependentUpon>Submitadd.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
