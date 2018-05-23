@@ -78,7 +78,7 @@
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td><strong>
-                    <asp:Button ID="Uploadbutton" runat="server" CssClass="auto-style3" Text="Upload" />
+                    <asp:Button ID="Uploadbutton" runat="server" CssClass="auto-style3" OnClick="Uploadbutton_Click" Text="Upload" />
                     </strong></td>
             </tr>
             <tr>

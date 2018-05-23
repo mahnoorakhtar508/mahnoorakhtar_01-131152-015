@@ -22,7 +22,7 @@ namespace vp_project
             {
                 SqlConnection con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True");
                 con.Open();
-                string Checkuser = "Select count(*) from signUp where email ='" + emailTextBox.Text + "'  and password='"+passwordTextBox.Text+"' ";
+                string Checkuser = "Select count(*) from signUp where email ='" + emailTextBox.Text + "'  and password='"+passwordTextBox.Text+"' "; //checks if user entered email and password matches with that in database.
                 SqlCommand cmnd = new SqlCommand(Checkuser, con);
                 int temp = 0;
                 temp = Convert.ToInt32(cmnd.ExecuteScalar().ToString());
@@ -30,10 +30,10 @@ namespace vp_project
                 if (temp == 1)
                 {
                     con.Open();
-                    string checkpass = "Select password from signUp where email ='" + emailTextBox.Text + "' ";
+                    string checkpass = "Select password from signUp where email ='" + emailTextBox.Text + "' "; //checks if for a particular email that password is correct or not.
                     SqlCommand cmd = new SqlCommand(checkpass, con);
                     string password = cmd.ExecuteScalar().ToString();
-                    if (password == passwordTextBox.Text)
+                    if (password == passwordTextBox.Text) //password in database and user entered matches or not
                     {
                         Session["New"] = emailTextBox.Text;
                         Response.Write("login Successful");

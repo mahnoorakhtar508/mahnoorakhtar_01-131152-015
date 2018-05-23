@@ -32,7 +32,7 @@ namespace vp_project
             {
                cmnd.Connection = con;
                 reader = cmnd.ExecuteReader();
-                if (reader.Read())
+                if (reader.Read()) //checks if that email already exists or not.
                 {
                     Response.Write("Record already exists");
 
@@ -81,7 +81,7 @@ namespace vp_project
             }
 
            con.Close();
-            first_nameTextBox.Text = "";
+            first_nameTextBox.Text = ""; //after registration made etc it sets the text fields to empty.
             last_nameTextBox.Text = "";
             emailTextBox.Text = "";
             passwordTextBox.Text="";
