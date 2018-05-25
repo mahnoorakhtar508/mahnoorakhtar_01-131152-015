@@ -48,7 +48,7 @@
               <!-- /.col-lg-3 -->
               <div class="col-lg-9">
                   <div class="card mt-4">
-                      <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
+                      <img class="card-img-top img-fluid" src="<%# Eval("image") %>" alt="">
                       <div class="card-body">
                           <h3 class="card-title">Product Name</h3>
                           <h4>$24.99</h4>
@@ -57,7 +57,7 @@
                           4.0 stars
                       </div>
                   </div>
-                  <!-- /.card -->
+                <%--  <!-- /.card -->
                   <div class="card card-outline-secondary my-4">
                       <div class="card-header">
                           Product Reviews
@@ -74,7 +74,7 @@
                           <hr>
                           <a href="#" class="btn btn-success">Leave a Review</a>
                       </div>
-                  </div>
+                  </div>--%>
                   <!-- /.card -->
               </div>
               <!-- /.col-lg-9 -->

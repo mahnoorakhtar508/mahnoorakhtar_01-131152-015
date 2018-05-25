@@ -18,11 +18,15 @@
         .auto-style4 {
             color: #FF3300;
         }
+        .auto-style5 {
+            width: 866px;
+            height: 320px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div class="auto-style5">
     
         <table class="auto-style1">
             <tr>
@@ -88,7 +92,14 @@
         </table>
     
     </div>
-        <asp:FileUpload ID="FileUpload2" runat="server" />
     </form>
+    <table class="auto-style1">
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
 </body>
 </html>

@@ -98,6 +98,7 @@
     <Content Include="home.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="images\download.jpg" />
+    <Content Include="images\electronics.aspx" />
     <Content Include="images\electronics1.jpg" />
     <Content Include="images\furniture1.jpg" />
     <Content Include="images\house2.jpg" />
@@ -154,6 +155,13 @@
     </Compile>
     <Compile Include="homepage.aspx.designer.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="images\electronics.aspx.cs">
+      <DependentUpon>electronics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="images\electronics.aspx.designer.cs">
+      <DependentUpon>electronics.aspx</DependentUpon>
     </Compile>
     <Compile Include="items.aspx.cs">
       <DependentUpon>items.aspx</DependentUpon>
