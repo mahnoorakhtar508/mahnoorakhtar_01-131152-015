@@ -76,6 +76,19 @@
                 </td>
             </tr>
             <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label5" runat="server" Text="Category"></asp:Label>
+                </td>
+                <td>
+                    <asp:DropDownList ID="DropDownList2" runat="server">
+                        <asp:ListItem>Electronics</asp:ListItem>
+                        <asp:ListItem>Home</asp:ListItem>
+                        <asp:ListItem>Furniture</asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
@@ -84,10 +97,6 @@
                 <td><strong>
                     <asp:Button ID="Uploadbutton" runat="server" CssClass="auto-style3" OnClick="Uploadbutton_Click" Text="Upload" />
                     </strong></td>
-            </tr>
-            <tr>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
         </table>
     

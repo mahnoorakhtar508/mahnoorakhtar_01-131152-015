@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="vp_project.home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="furniture.aspx.cs" Inherits="vp_project.furniture" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <!-- Navigation -->
+            <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
           <a class="navbar-brand" href="#">Renters</a>
@@ -12,15 +12,15 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="home.aspx">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="sign_up.aspx">Sign_Up</a>
+              <a class="nav-link" href="#">Sign_Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="log_in.aspx">login</a>
+              <a class="nav-link" href="#">login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -40,14 +40,13 @@
 
           <div class="list-group">
             <a href="electronics.aspx" class="list-group-item">Electronics</a>
-            <a href="house.aspx" class="list-group-item">House</a>
-            <a href="furniture.aspx" class="list-group-item">Furniture</a>
+            <a href="hpuse.aspx" class="list-group-item">House</a>
+            <a href="#" class="list-group-item">Furniture</a>
           </div>
 
         </div>
         <!-- /.col-lg-3 -->
 
-      
         <div class="col-lg-9">
 
           <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -56,29 +55,11 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <img class="d-block img-fluid" src="images/img2.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="images/furniture1.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="images/electronics1.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+ 
           </div>
 
           <div class="row">
-
+              
               <asp:ListView ID="itemList" runat="server">
                  <ItemTemplate>
 
@@ -125,5 +106,4 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </asp:Content>

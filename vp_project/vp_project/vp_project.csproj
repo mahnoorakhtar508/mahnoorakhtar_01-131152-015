@@ -94,6 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="electronics.aspx" />
+    <Content Include="furniture.aspx" />
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
     <Content Include="homepage.aspx" />
@@ -139,6 +141,20 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="electronics.aspx.cs">
+      <DependentUpon>electronics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="electronics.aspx.designer.cs">
+      <DependentUpon>electronics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="furniture.aspx.cs">
+      <DependentUpon>furniture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="furniture.aspx.designer.cs">
+      <DependentUpon>furniture.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

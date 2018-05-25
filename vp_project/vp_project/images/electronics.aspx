@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="home.aspx.cs" Inherits="vp_project.home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/masterpage.Master" AutoEventWireup="true" CodeBehind="electronics.aspx.cs" Inherits="vp_project.images.electronics" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <!-- Navigation -->
+   <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
           <a class="navbar-brand" href="#">Renters</a>
@@ -39,9 +39,9 @@
            <a class="logo" href="index.html"><img src="images/download.png" /></a>
 
           <div class="list-group">
-            <a href="electronics.aspx" class="list-group-item">Electronics</a>
-            <a href="house.aspx" class="list-group-item">House</a>
-            <a href="furniture.aspx" class="list-group-item">Furniture</a>
+            <a href="#" class="list-group-item">Electronics</a>
+            <a href="#" class="list-group-item">Home</a>
+            <a href="#" class="list-group-item">Furniture</a>
           </div>
 
         </div>
@@ -125,5 +125,4 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </asp:Content>

@@ -22,7 +22,7 @@ namespace vp_project
             SqlConnection con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True"); //connection string
             con.Open();
             SqlCommand cmnd = new SqlCommand();
-            cmnd = new SqlCommand("insert into items" + "(Title,image,Description,price,status) values(@Title,@image,@Description,@price,@status) ", con);// sqlquery
+            cmnd = new SqlCommand("insert into itemss" + "(Title,image,Description,price,status,Category) values(@Title,@image,@Description,@price,@status,@Category) ", con);// sqlquery
             cmnd.Parameters.AddWithValue("@Title", titletextboc.Text);
             if (FileUpload1.HasFile)
             {
@@ -39,6 +39,7 @@ namespace vp_project
             cmnd.Parameters.AddWithValue("@Description", descriptiontextbx.Text); //add values from user written in text fields to database in specific coulmn 
             cmnd.Parameters.AddWithValue("@price", pricetextbox.Text);
             cmnd.Parameters.AddWithValue("@status", DropDownList1.SelectedItem.Value);
+            cmnd.Parameters.AddWithValue("@Category", DropDownList2.SelectedItem.Value);
             int i = cmnd.ExecuteNonQuery();
             if (i != 0)
             {
