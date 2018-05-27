@@ -99,16 +99,15 @@
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
     <Content Include="homepage.aspx" />
-    <Content Include="images\download.jpg" />
-    <Content Include="images\electronics.aspx" />
-    <Content Include="images\electronics1.jpg" />
-    <Content Include="images\furniture1.jpg" />
-    <Content Include="images\house2.jpg" />
-    <Content Include="images\images %281%29.jpg" />
-    <Content Include="images\img1.jpg" />
-    <Content Include="images\img2.jpg" />
-    <Content Include="images\laptop.jpg" />
-    <Content Include="images\office1-700x400.jpg" />
+    <Content Include="iimages\download.jpg" />
+    <Content Include="iimages\electronics.aspx" />
+    <Content Include="iimages\electronics1.jpg" />
+    <Content Include="iimages\furniture1.jpg" />
+    <Content Include="iimages\house2.jpg" />
+    <Content Include="iimages\images %281%29.jpg" />
+    <Content Include="iimages\img1.jpg" />
+    <Content Include="iimages\img2.jpg" />
+    <Content Include="iimages\laptop.jpg" />
     <Content Include="index.html" />
     <Content Include="indexcart.html" />
     <Content Include="items.aspx" />
@@ -173,11 +172,11 @@
     <Compile Include="homepage.aspx.designer.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="images\electronics.aspx.cs">
+    <Compile Include="iimages\electronics.aspx.cs">
       <DependentUpon>electronics.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="images\electronics.aspx.designer.cs">
+    <Compile Include="iimages\electronics.aspx.designer.cs">
       <DependentUpon>electronics.aspx</DependentUpon>
     </Compile>
     <Compile Include="items.aspx.cs">

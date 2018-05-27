@@ -9,15 +9,18 @@ using System.Data;
 
 namespace vp_project
 {
-    public partial class items : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             SqlConnection con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True");
             con.Open();
-            string query = "Select * from itemss ";
-            SqlCommand cmnd = new SqlCommand(query, con);
+            DataTable dt = new DataTable();
+            string query = "select * from itemss where Category='Home' ;";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            sda.Fill(dt);
+            itemList.DataSource = dt;
+            itemList.DataBind();
 
         }
     }

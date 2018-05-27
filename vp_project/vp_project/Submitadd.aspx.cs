@@ -24,18 +24,26 @@ namespace vp_project
             SqlCommand cmnd = new SqlCommand();
             cmnd = new SqlCommand("insert into itemss" + "(Title,image,Description,price,status,Category) values(@Title,@image,@Description,@price,@status,@Category) ", con);// sqlquery
             cmnd.Parameters.AddWithValue("@Title", titletextboc.Text);
-            if (FileUpload1.HasFile)
+            if (FileUpload1.HasFile) //checks if user has selected a file or not
             {
-                FileUpload1.SaveAs(Server.MapPath("~/images/" + FileUpload1.FileName)); //saves a file to images folder.
-                Response.Write("file saved in images folder");
+                //string fileextention = System.IO.Path.GetExtension(FileUpload1.FileName);
+                //if (fileextention.ToLower() != ".png" || fileextention.ToLower() != ".jpg" || fileextention.ToLower() != ".bmp")
+                
+                    FileUpload1.SaveAs(Server.MapPath("~/iimages/" + FileUpload1.FileName)); //saves a file to images folder.
+                   
+
+                
+                //else
+                //{
+                //    Response.Write("please select required image i-e png,jpg etc only");
+                //}
+
             }
             else
             {
                 Response.Write("select image to upload");
             }
             cmnd.Parameters.AddWithValue("@image", "images\\" + FileUpload1.FileName);
-            //string filr = System.IO.Path.GetFileName(FileUpload1.PostedFile.FileName);
-            //cmnd.Parameters.AddWithValue("@image",filr);
             cmnd.Parameters.AddWithValue("@Description", descriptiontextbx.Text); //add values from user written in text fields to database in specific coulmn 
             cmnd.Parameters.AddWithValue("@price", pricetextbox.Text);
             cmnd.Parameters.AddWithValue("@status", DropDownList1.SelectedItem.Value);
@@ -43,7 +51,7 @@ namespace vp_project
             int i = cmnd.ExecuteNonQuery();
             if (i != 0)
             {
-                Response.Write("registration successful");
+                Response.Write("data is saved successfully");
             }
 
         }
