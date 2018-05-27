@@ -39,8 +39,8 @@
 
           <div class="list-group">
             <a href="electronics.aspx" class="list-group-item">Electronics</a>
-            <a href="hpuse.aspx" class="list-group-item">House</a>
-            <a href="#" class="list-group-item">Furniture</a>
+            <a href="house.aspx" class="list-group-item">House</a>
+            <a href="furniture.aspx" class="list-group-item">Furniture</a>
           </div>
 
         </div>
@@ -64,7 +64,7 @@
 
                     <div class="col-lg-4 col-md-6 mb-4">
                       <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="<%# Eval("image") %>" alt=""></a>
+                        <a href="items.aspx"><img class="card-img-top" src="<%# Eval("image") %>" alt=""></a>
                         <div class="card-body">
                           <h4 class="card-title">
                             <a href="#"><%# Eval("Title") %></a>

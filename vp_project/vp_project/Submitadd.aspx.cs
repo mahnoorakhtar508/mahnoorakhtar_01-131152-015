@@ -27,7 +27,7 @@ namespace vp_project
             if (FileUpload1.HasFile) //checks if user has selected a file or not
             {
                 string fileextention = System.IO.Path.GetExtension(FileUpload1.FileName);
-                if (fileextention.ToLower() != ".png" || fileextention.ToLower() != ".jpg" || fileextention.ToLower() != ".bmp")
+                if (fileextention.ToLower() != ".png" || fileextention.ToLower() != ".jpg" || fileextention.ToLower() != ".JPEG")
                 {
                     FileUpload1.SaveAs(Server.MapPath("~/iimages/" + FileUpload1.FileName)); //saves a file to images folder.
                 }
@@ -41,7 +41,7 @@ namespace vp_project
             {
                 Response.Write("select image to upload");
             }
-            cmnd.Parameters.AddWithValue("@image", "images\\" + FileUpload1.FileName);
+            cmnd.Parameters.AddWithValue("@image", "iimages\\" + FileUpload1.FileName);
             cmnd.Parameters.AddWithValue("@Description", descriptiontextbx.Text); //add values from user written in text fields to database in specific coulmn 
             cmnd.Parameters.AddWithValue("@price", pricetextbox.Text);
             cmnd.Parameters.AddWithValue("@status", DropDownList1.SelectedItem.Value);
