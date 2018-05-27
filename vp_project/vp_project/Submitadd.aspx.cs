@@ -26,18 +26,16 @@ namespace vp_project
             cmnd.Parameters.AddWithValue("@Title", titletextboc.Text);
             if (FileUpload1.HasFile) //checks if user has selected a file or not
             {
-                //string fileextention = System.IO.Path.GetExtension(FileUpload1.FileName);
-                //if (fileextention.ToLower() != ".png" || fileextention.ToLower() != ".jpg" || fileextention.ToLower() != ".bmp")
-                
+                string fileextention = System.IO.Path.GetExtension(FileUpload1.FileName);
+                if (fileextention.ToLower() != ".png" || fileextention.ToLower() != ".jpg" || fileextention.ToLower() != ".bmp")
+                {
                     FileUpload1.SaveAs(Server.MapPath("~/iimages/" + FileUpload1.FileName)); //saves a file to images folder.
-                   
+                }
 
-                
-                //else
-                //{
-                //    Response.Write("please select required image i-e png,jpg etc only");
-                //}
-
+                else
+                {
+                    Response.Write("please use the correct extension");
+                }
             }
             else
             {
