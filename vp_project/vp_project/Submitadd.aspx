@@ -22,11 +22,26 @@
             width: 866px;
             height: 320px;
         }
+        .auto-style6 {
+            font-size: xx-large;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div class="auto-style5">
+    
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style6"><strong>Submit Add</strong></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
     
         <table class="auto-style1">
             <tr>

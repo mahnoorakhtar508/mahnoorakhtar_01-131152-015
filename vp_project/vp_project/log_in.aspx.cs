@@ -22,7 +22,7 @@ namespace vp_project
             {
                 SqlConnection con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True");
                 con.Open();
-                string Checkuser = "Select count(*) from Vendor where email ='" + emailTextBox.Text + "'  and password='"+passwordTextBox.Text+"' "; //checks if user entered email and password matches with that in database.
+                string Checkuser = "Select count(*) from Vendor where email ='" + emailTextBox.Text + "' and password='"+passwordTextBox.Text+ "' and Category='" + DropDownList1.SelectedItem.Value + "' "; //checks if user entered email and password matches with that in database.
                 SqlCommand cmnd = new SqlCommand(Checkuser, con);
                 int temp = 0;
                 temp = Convert.ToInt32(cmnd.ExecuteScalar().ToString());
@@ -35,9 +35,13 @@ namespace vp_project
                     string password = cmd.ExecuteScalar().ToString();
                     if (password == passwordTextBox.Text) //password in database and user entered matches or not
                     {
-                        Session["New"] = emailTextBox.Text;
-                        Response.Write("login Successful");
-                        Response.Redirect("~/Submitadd.aspx");
+                        Session["New"] = emailTextBox.Text;  
+                        if(DropDownList1.SelectedItem.Value=="Vendor")
+                        {
+                            Response.Write("login Successful");
+                            Response.Redirect("~/Submitadd.aspx");
+                        }
+                       
 
                     }
                     else

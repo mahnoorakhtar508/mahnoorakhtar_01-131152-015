@@ -30,6 +30,17 @@
         <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
 &nbsp;<asp:TextBox ID="passwordTextBox" runat="server" TextMode="Password" Width="178px"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="passwordTextBox" ErrorMessage="Password required" style="color: #FF3300"></asp:RequiredFieldValidator>
+        &nbsp;&nbsp;
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Select"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem>Vendor</asp:ListItem>
+            <asp:ListItem>Buyer</asp:ListItem>
+            <asp:ListItem></asp:ListItem>
+        </asp:DropDownList>
         <br />
         <br />
         <asp:Button ID="loginbutton" runat="server" OnClick="loginbutton_Click" style="font-weight: 700" Text="Login" Width="70px" />
