@@ -48,10 +48,12 @@ namespace vp_project
             cmnd.Parameters.AddWithValue("@Category", DropDownList2.SelectedItem.Value);
             int i = cmnd.ExecuteNonQuery();
             if (i != 0)
-            {
+            { 
                 Response.Write("data is saved successfully");
             }
 
         }
+
     }
+   
 }

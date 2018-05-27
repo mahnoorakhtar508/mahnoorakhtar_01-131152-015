@@ -67,9 +67,9 @@
                         <a href="items.aspx"><img class="card-img-top" src="<%# Eval("image") %>" alt=""></a>
                         <div class="card-body">
                           <h4 class="card-title">
-                            <a href="#"><%# Eval("Title") %></a>
+                            <a href="items.aspx"><%# Eval("Title") %></a>
                           </h4>
-                          <h5>$ <%# Eval("price") %></h5>
+                          <h5>pkr <%# Eval("price") %></h5>
                           <p class="card-text"><%# Eval("status") %></p>
                         </div>
                         <div class="card-footer">
