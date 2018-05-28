@@ -36,7 +36,7 @@
       <div class="row">
 
         <div class="col-lg-3">
-           <a class="logo" href="index.html"><img src="images/download.png" /></a>
+           <a class="logo" href="index.html"><img src="iimages/download.png" /></a>
 
           <div class="list-group">
             <a href="electronics.aspx" class="list-group-item">Electronics</a>

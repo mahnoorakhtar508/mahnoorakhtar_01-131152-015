@@ -11,12 +11,12 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarResponsive">
                   <ul class="navbar-nav ml-auto">
-                      <li class="nav-item active">
+                  <%--    <li class="nav-item active">
                           <a class="nav-link" href="#">
                               Home
                               <span class="sr-only">(current)</span>
                           </a>
-                      </li>
+                      </li>--%>
                       <li class="nav-item">
                           <a class="nav-link" href="home.aspx">Home</a>
                       </li>
@@ -36,7 +36,7 @@
       <div class="row">
 
         <div class="col-lg-3">
-           <a class="logo" href="index.html"><img src="images/download.png" /></a>
+           <a class="logo" href="index.html"><img src="iimages/download.png" /></a>
 
           <div class="list-group">
             <a href="electronics.aspx" class="list-group-item">Electronics</a>
