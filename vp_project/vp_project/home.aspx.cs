@@ -16,7 +16,7 @@ namespace vp_project
             SqlConnection con = new SqlConnection("Data Source = ASUSPC; Initial Catalog = vp_project; Integrated Security = True");
             con.Open();
             DataTable dt = new DataTable();
-            string query = "select * from itemss ;";
+            string query = "select* from itemss ;";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
             sda.Fill(dt);
             itemList.DataSource=dt;
